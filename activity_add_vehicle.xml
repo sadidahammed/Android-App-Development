@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDECEC"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:onClick="BackFunction"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/arrow_back_blackcolor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="115dp"
+            android:text="Add Vehicle"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:typeface="serif"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EDECEC"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Vehicle registration number"
+
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/registrationNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:hint="If you don't have number,Use unique ID."
+                android:textSize="13dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:inputType="number"
+                android:paddingLeft="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="Select Vehicle Category"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/vehicleSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edittext_border"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="Select Area"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/locationSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edittext_border"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="Do you have vehicle papers?"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/vehiclePapersRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:text="Yes"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:text="No"
+                        android:textSize="15dp" />
+
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.5"
+                        android:text="For registration"
+                        android:textSize="15dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="Age of your vehicle?"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/vehicleAge"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:inputType="number"
+                android:hint="How long you have this vehicle."
+                android:textSize="13dp"
+                android:paddingLeft="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="Are you the first owner?"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/firstOwnerRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Yes"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="No"
+                        android:textSize="15dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/postVehicleID"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button"
+                android:text="Post vehicle"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:typeface="serif" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

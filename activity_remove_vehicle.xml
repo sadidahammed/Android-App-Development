@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDECEC"
+    android:orientation="vertical">
+
+    <ScrollView
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDECEC">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp">
+
+                <ImageView
+                    android:id="@+id/back_arrow"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/arrow_back_blackcolor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="115dp"
+                    android:text="Remove Vehicle"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:typeface="serif" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EDECEC"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Vehicle registration number"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/registrationNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded_corners_ll"
+                    android:hint="If you don't have number, Use previous unique ID."
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded_corners_ll"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="Select Vehicle Category"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <Spinner
+                        android:id="@+id/vehicleSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_border" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded_corners_ll"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="Select Area"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+
+                    <Spinner
+                        android:id="@+id/locationSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_border" />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/passEditTextId"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded_corners_ll"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/password_warning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:textColor="@color/red"
+                    android:textSize="9dp" />
+
+                <Button
+                    android:id="@+id/removeVehicle"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button"
+                    android:text="Remove vehicle"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="17dp"
+                    android:typeface="serif" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

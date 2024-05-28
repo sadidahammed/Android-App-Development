@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Caribbean_Green"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-15dp"
+        android:paddingRight="30dp"
+        android:text="Get"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="55dp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:paddingLeft="100dp"
+        android:text="Vehicle"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="italic|bold"
+        android:typeface="serif" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/rounded_corners_ll"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/Caribbean_Green"
+            android:orientation="horizontal"
+            android:paddingBottom="1dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/signinBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:text="Sign In"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/signupBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:onClick="loginFunction"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textSize="16dp"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/authenticationFregment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>

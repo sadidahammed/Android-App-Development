@@ -1,0 +1,300 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Caribbean_Green"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginRight="100dp"
+            android:text="Dashboard"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:typeface="serif" />
+
+        <ImageButton
+            android:id="@+id/setting_Btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/four_line_horizontal" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/home_image" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/CarVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:onClick="SearchFunction"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image_view_oval"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/car_image_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Daily Car Hire Services"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Experience convenience and flexibility with our daily car hire service for reliable transportation solutions on a daily basis."
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/TruckVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:onClick="SearchFunction"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image_view_oval"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/truck_image_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Truck Hire Services"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Experience reliable and efficient truck hire services for all your transportation needs. Flexible rental options available for daily use, ensuring seamless logistics solutions tailored to your requirements."
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AutoCNGVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:onClick="SearchFunction"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image_view_oval"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/cng_image_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Daily Auto CNG Rentals"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Convenient daily auto CNG rentals for eco-conscious commuting needs with reliability and ease."
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/autoRiskshawVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:onClick="SearchFunction"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image_view_oval"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="9dp"
+                    android:src="@drawable/auto_rickshaw_image_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Auto Rickshaw Rental Service"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Convenient daily auto rickshaw rentals for reliable transportation solutions. Book now for hassle-free commuting."
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MiniTruckVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:onClick="SearchFunction"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/image_view_oval"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/mini_truck_image_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Mini Truck Hire Services"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="5dp"
+                        android:text="Discover convenient and flexible mini truck hire services for all your transportation needs.Prompt delivery ensure smooth operations for your business or personal requirements."
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:typeface="serif" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".searchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:onClick="deshboardFunction"
+            app:srcCompat="@drawable/arrow_back_blackcolor" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_corners_ll"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Select area and search."
+                android:typeface="serif" />
+
+            <Spinner
+                android:id="@+id/locationSpinner"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/edittext_border" />
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/showListVehicle"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/search_vehicle_icon" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/searchFregment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/round_background_not_white" />
+
+
+</LinearLayout>

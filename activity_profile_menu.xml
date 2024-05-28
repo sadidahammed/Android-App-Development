@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".profile_menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:onClick="Functionality"
+            app:srcCompat="@drawable/arrow_back_blackcolor" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="30dp"
+            android:text="My Account"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/Caribbean_Green"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/Caribbean_Green"
+            android:gravity="center|top"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-15dp"
+                android:paddingRight="30dp"
+                android:text="Get"
+                android:textColor="@color/white"
+                android:textSize="55dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100dp"
+                android:text="Vehicle"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="italic|bold"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@color/Caribbean_Green"
+            android:gravity="left|top"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/account_name_show_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/account_email_show_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:textSize="12dp"
+                android:typeface="serif" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f0f0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="top"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Owner Services"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:typeface="serif" />
+
+
+            <Button
+                android:id="@+id/add_vehicle_icon_ID"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="left|center"
+                android:onClick="OwnerFunction"
+                android:paddingLeft="10dp"
+                android:text="Add Vehicle"
+                android:textAllCaps="false"
+                android:textSize="14dp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/remove_vehicle_icon_ID"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="1.5dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="left|center"
+                android:onClick="OwnerFunction"
+                android:paddingLeft="10dp"
+                android:text="Remove Vehicle"
+                android:textAllCaps="false"
+                android:textSize="14dp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/SearchDriver"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="1.5dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="left|center"
+                android:onClick="OwnerFunction"
+                android:paddingLeft="10dp"
+                android:text="Search Driver"
+                android:textAllCaps="false"
+                android:textSize="14dp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/owner_update_profile"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="1.5dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="left|center"
+                android:onClick="OwnerFunction"
+                android:paddingLeft="10dp"
+                android:text="Update Profile"
+                android:textAllCaps="false"
+                android:textSize="14dp"
+                android:typeface="serif" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Driver Services"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/searchVehicle"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="1.5dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="left|center"
+                android:onClick="OwnerFunction"
+                android:paddingLeft="10dp"
+                android:text="Search Vehicle"
+                android:textAllCaps="false"
+                android:textSize="14dp"
+                android:typeface="serif" />
+
+
+            <Button
+                android:id="@+id/updateDriverProfile"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="1.5dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="left|center"
+                android:onClick="OwnerFunction"
+                android:paddingLeft="10dp"
+                android:text="Update Profile"
+                android:textAllCaps="false"
+                android:textSize="14dp"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Terms and Condition"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/feedbackBtn"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="1.5dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="left|center"
+                android:onClick="TearmsAndConfitionFunction"
+                android:paddingLeft="10dp"
+                android:text="Feedback"
+                android:textAllCaps="false"
+                android:textSize="14dp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/privacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="1.5dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="left|center"
+                android:onClick="TearmsAndConfitionFunction"
+                android:paddingLeft="10dp"
+                android:text="Privacy policy"
+                android:textAllCaps="false"
+                android:textSize="14dp"
+                android:typeface="serif" />
+
+            <Button
+                android:id="@+id/contactBtn"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="1.5dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="left|center"
+                android:onClick="TearmsAndConfitionFunction"
+                android:paddingLeft="10dp"
+                android:text="Contact us"
+                android:textAllCaps="false"
+                android:textSize="14dp"
+                android:typeface="serif" />
+
+
+            <Button
+                android:id="@+id/logOut"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_corners_ll"
+                android:gravity="left|center"
+                android:onClick="OwnerFunction"
+                android:paddingLeft="10dp"
+                android:text="Log Out"
+                android:textAllCaps="false"
+                android:textColor="@color/red"
+                android:textSize="14dp"
+                android:typeface="serif" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

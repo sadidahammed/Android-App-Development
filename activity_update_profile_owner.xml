@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/account_Btn"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@color/white"
+            android:onClick="deshboardFunction"
+            app:srcCompat="@drawable/arrow_back_blackcolor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Profile"
+            android:layout_gravity="center"
+            android:paddingRight="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F6F6F6"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="120dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="140dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/profile_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Update Name"
+                android:textColor="#818181"
+                android:textSize="16dp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/update_name_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Update Phone Number"
+                android:textColor="#818181"
+                android:textSize="16dp"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/update_phone_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:hint="+880 "
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Update Area"
+                android:textColor="#818181"
+                android:textSize="16dp"
+                android:typeface="serif" />
+            <Spinner
+                android:id="@+id/locationSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edittext_border" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="New Password"
+                android:textColor="#818181"
+                android:textSize="16dp"
+                android:typeface="serif" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/create_pass_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edittext_border"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/create_pass_warning_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:textColor="@color/red" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Give Password to Update"
+                android:textAlignment="center"
+                android:textColor="@color/red"
+                android:textSize="13dp"
+                android:typeface="serif" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:text="Password"
+                android:textColor="#818181"
+                android:textSize="16dp"
+                android:typeface="serif" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textColor="@color/black"
+                app:endIconMode="password_toggle"
+                app:endIconTint="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/passEditTextId"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/black_border_edittext"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/password_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="25dp"
+                android:textColor="@color/red"
+                android:textSize="9dp" />
+
+            <Button
+                android:id="@+id/saveUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="18dp"
+                android:background="@drawable/button"
+                android:text="Update Information"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="14dp"
+                android:typeface="serif" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

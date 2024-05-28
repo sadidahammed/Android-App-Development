@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="7dp">
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="120dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="100dp"
+                    app:srcCompat="@drawable/profile_logo" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:paddingLeft="20dp"
+                    android:text="What's your name?"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <EditText
+                        android:id="@+id/create_name1Id"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight=".9"
+                        android:background="@drawable/edittext_border"
+                        android:hint="First name"
+                        android:paddingLeft="10sp"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/create_name2Id"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight=".9"
+                        android:background="@drawable/edittext_border"
+                        android:hint="Surname"
+                        android:paddingLeft="10sp"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="Gender"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/gender_radiogrp_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Male"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Female"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:text="Other"
+                        android:textSize="15dp" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="E-mail Address"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/create_emailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edittext_border"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="Phone number"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <EditText
+                    android:id="@+id/create_phone_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edittext_border"
+                    android:inputType="number"
+                    android:paddingLeft="10sp"
+                    android:text="+880 " />
+
+                <TextView
+                    android:id="@+id/create_phone_warning_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:textColor="@color/red" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="Select Area"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <Spinner
+                        android:id="@+id/locationSpinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edittext_border" />
+
+
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:text="Password"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/white"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/create_pass_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/create_pass_warning_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:paddingLeft="20dp"
+                    android:text="Confirm password"
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/white"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/create_conf_pass_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/create_conf_pass_warning_ID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fill information if you are a driver."
+                    android:textAlignment="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="Experience"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <RadioGroup
+                        android:id="@+id/experience_radiogrp_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1 year"
+                            android:textSize="13dp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".9"
+                            android:text="2 years"
+                            android:textSize="13dp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".9"
+                            android:text="3 years"
+                            android:textSize="13dp" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".9"
+                            android:text="More"
+                            android:textSize="13dp" />
+
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="Do you have driving licenses?"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <RadioGroup
+                        android:id="@+id/licenses_radiogrp_ID"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="Yes" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".7"
+                            android:text="No" />
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.4"
+                            android:text="Learning Licenses" />
+                    </RadioGroup>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingLeft="20dp"
+                            android:text="Driver for which vehicle."
+                            android:textColor="@color/black"
+                            android:textSize="13dp" />
+
+                        <Spinner
+                            android:id="@+id/vehicleSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/edittext_border" />
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:paddingLeft="20dp"
+                        android:text="Last month income"
+                        android:textColor="@color/black"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/incomeID"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/edittext_border"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="10sp" />
+
+                </LinearLayout>
+
+                    <Button
+                        android:id="@+id/createAccountBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/button"
+                        android:text="Sign Up"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:typeface="serif" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
